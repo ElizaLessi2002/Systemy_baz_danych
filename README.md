@@ -1,1 +1,0 @@
-# Systemy_baz_danych
