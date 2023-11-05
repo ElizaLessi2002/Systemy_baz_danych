@@ -1,12 +1,187 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Page Title</title>
+    <meta charset= "utf-8"/>
+    <title>Teatr Nowoczesny</title>
+		<meta name="description" content=""/>
+		<meta name="keywords" content="teatr,sztuka,aktorstwo,aktorzy,scena,wydarzenia,przedstawienie teatralne,widowisko,seans,spektakl,utwor,festiwal,partnerzy,kultura,wystep"/>
+		<meta name="author" content="Gruparobocza3"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+    <link rel="stylesheet" href="main.css"/>
+
+    <script>
+		jQuery(function($)
+		{
+			$.scrollTo(0);
+
+			$('#link1').click(function(){ $.scrollTo($('#Onas'), 500); });
+			$('#link2').click(function(){ $.scrollTo($('#Festiwal'), 500); });
+			$('#link3').click(function(){ $.scrollTo($('#Repertuar'), 1000); });
+			$('#link4').click(function(){ $.scrollTo($('#Spektakle'),1000); });
+			$('#link5').click(function(){ $.scrollTo($('#Zespół'), 2000); });
+            $('#link6').click(function(){ $.scrollTo($('#Kontakt'), 2000); });
+
+			$('.scrollup').click(function(){ $.scrollTo($('body'), 1000); });
+
+
+		}
+		);
+		//pokaz podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		)
+		
+		</script>
+
 </head>
 <body>
+    <header>
+        <a href="#" class="scrollup"></a>
+            <div class="logo">
+                <img src="teatr.png" width="300" height="150" alt="Teatr" style="float:left">
+                <h1>Projekt z systemów baz danych Grupa Robocza 3</h1>
+            </div>
+        <nav>
+            <ul class="menu">
+                <li>
+                <a id="link1" href="#" title="O nas"	class="navlink"> 
+                Teatr
+                </a>
+                </li>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+                <li>
+                <a id="link2" href="#" title="Festiwal"    class="navlink">
+                Festiwal
+                </a>
+                </li>
+
+                <li>
+                <a id="link3" href="#"	title="Repertuar" class="navlink">
+                Repertuar
+                </a>
+                </li>
+
+                <li>
+                <a id="link4" href="#" title="Spektakle"    class="navlink">
+                Spektakle
+                </a>
+                </li>
+
+                <li>
+                <a id="link5" href="#"	title="Zespół" class="navlink">
+                Zespół
+                </a>
+                </li>
+
+                <li>
+                <a id="link6" href="#" title="Kontakt"    class="navlink">
+                Kontakt
+                </a>
+                </li>
+                <br/>
+            </ul>
+
+        </nav>   
+    </header>
+    <main>
+        <div class="content">
+            <section>
+                <div class="teatr">
+                    <h1>Teatr</h1>
+
+                    <h4>Historia</h4>
+
+                    <h4>Budowa sceny</h4>
+
+                    <h4>Dane techniczne</h4>
+
+                    <h4>Kodeks etyki</h4>
+
+                    <h4>Program</h4>
+
+                    <h4>Kurtyna</h4>
+    
+                </div>
+            </section>
+            <section>
+                <div class="Festiwal">
+                    <h1>Festiwal</h1>
+
+                    <h4>Tytuły</h4>
+
+                    <h4>Opisy</h4>
+
+                    <h4>Archiwum</h4>
+
+                    <h4>Reżyseria</h4>
+
+                    <h4>Tytuł najlepszej aktorki</h4>
+
+                    <h4>Tytuł najlepszego aktora</h4>
+
+                    <h4>Zdjęcia</h4>
+
+                    <h4>Organizatorzy</h4>
+
+                    <h4>Partnerzy</h4>
+
+                </div>
+            </section>
+            <section>
+                <div class="Repertuar">
+                    <h1>Repertuar</h1>
+
+                    <h4>Tytuł spektaklu</h4>
+
+                    <h4>Sala</h4> 
+
+                    <h4>Przedział wiekowy</h4>
+
+                </div> 
+            </section>
+            <section>
+                <div class="Spektakle">
+                    <h1>Spektakle</h1>
+                    <h4>Nazwa spektaklu</h4>
+                    <h4>Opis</h4>
+                    <h4>Scenografia</h4>
+                    <h4>Reżyseria</h4>
+                    <h4>Choreografia</h4>
+                    <h4>Projekcje</h4>
+                    <h4>Obsada</h4>
+                    <h4>Twórca autorskich warsztatów</h4>
+                    <h4>Przekład</h4>
+                    <h4>Czas trwania</h4>
+                    <h4>Kiedy gramy</h4>
+                    <h4>Bilety</h4>
+                </div>
+            </section>
+                
+            <section>
+                <div class="Zespol">
+                    <h1>Zespół</h1>
+                    <h4>Zarząd</h4>
+                    <h4>Infolinia</h4>
+                    <h4>Pracownicy</h4>
+                    <h4>Filie</h4>
+                </div>
+            </section>
+            <section>
+                <div class="Kontakt">
+                    <h1>Kontakt</h1>
+                    <h4>Telefon</h4>
+                    <h4>Mail</h4>
+                </div>
+            </section>   
+        </div>
+    </main>
+    
+
+    
 
 </body>
 </html>
