@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    font-size: 17px;
+    background-color: white;
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Mobile-first styles */
+.container-fluid {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    clear: both;
+    font-size: 12px;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.logo {
+    background-color: white;
+    text-align: center;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.logo > img {
+    margin-right: 10px;
+    height: auto;
+    max-width: 100%;
+}
+
+nav {
+    color: black;
+    background-color: white;
+    width: auto;
+    min-height: 20px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px; /* Adjusted for smaller screens */
+    display: flex;
+    justify-content: center; /* Center navigation items */
+}
+
+.menu {
+    list-style-type: none;
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    font-size: 16px; /* Adjusted font size for smaller screens */
+    min-height: 38px;
+    line-height: 150%; /* Adjusted line height for smaller screens */
+}
+
+.menu > li {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px dashed #303030;
+}
+
+.menu > li:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+
+.menu > li:first-child {
+    border-top: 1px dashed #303030; /* Add border to the first item */
+}
+
+#zawartosc {
+    float: left;
+    width: 100%;
+    margin: 10px 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.calosc {
+    display: flex;
+    justify-content: center;
+}
+
+/* Media query for tablets and larger screens */
+@media screen and (min-width: 768px) {
+    .menu {
+        font-size: 18px; /* Adjusted font size for larger screens */
+        min-height: 38px;
+        line-height: 200%; /* Adjusted line height for larger screens */
+    }
+
+    .menu > li {
+        display: inline-block;
+        padding: 0 20px;
+        border-bottom: none;
+    }
+}
+
